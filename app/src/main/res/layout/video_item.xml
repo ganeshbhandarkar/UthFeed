@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/videoPlay"
+    android:layout_width="match_parent"
+    android:layout_height="200dp"
+    app:cardElevation="10dp"
+    android:layout_margin="6dp"
+    app:cardBackgroundColor="#212F3C">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+            <WebView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/video_view"
+                >
+            </WebView>
+
+        <Button
+            android:id="@+id/fullVideoButton"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:textColor="@android:color/white"
+            android:textSize="20dp"
+            android:text="[   ]"
+            android:layout_margin="10dp"
+            android:background="@drawable/video_view_button"
+            />
+    </RelativeLayout>
+
+
+
+
+</androidx.cardview.widget.CardView>

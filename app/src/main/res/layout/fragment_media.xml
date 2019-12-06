@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:id="@+id/app_bar_media"
+        android:layout_height="50dp"
+        android:background="@android:color/black"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="MEDIA"
+                android:layout_centerInParent="true"
+                android:textStyle="bold"
+                android:fontFamily="@font/nasal"
+                android:textSize="20dp"
+                android:textColor="@android:color/holo_red_light"/>
+
+            <ImageView
+                android:id="@+id/profile_dialog"
+                android:layout_margin="10dp"
+                android:layout_alignParentEnd="true"
+                android:background="@drawable/ic_person_outline_black_24dp"
+                android:layout_width="30dp"
+                android:layout_height="30dp" />
+
+
+        </RelativeLayout>
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <com.google.android.material.tabs.TabLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/app_bar_media"
+        android:id="@+id/tabbar_media"
+        app:tabGravity="fill"
+        app:tabBackground="@android:color/black"
+        app:tabSelectedTextColor="@android:color/white"
+        app:tabIndicatorColor="#00B336"
+        app:tabIndicatorFullWidth="true"
+        app:tabIndicatorAnimationDuration="1000"
+        app:tabIndicatorGravity="top"
+        app:tabMode="fixed"
+        app:tabTextColor="#00B336"
+        app:tabIndicatorHeight="3dp"
+        app:tabRippleColor="#00B336"
+        >
+
+    </com.google.android.material.tabs.TabLayout>
+    <androidx.viewpager.widget.ViewPager
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/tabbar_media"
+        android:id="@+id/viewPager_media"></androidx.viewpager.widget.ViewPager>
+
+
+</RelativeLayout>

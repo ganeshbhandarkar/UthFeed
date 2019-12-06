@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#17202A</color>
+    <color name="colorPrimaryDark">#000000</color>
+    <color name="colorAccent">#3C9DFF</color>
+    <color name="onBoardTwo">#FFAD11</color>
+    <color name="onBoardThree">#2A3F5A</color>
+    <color name="onBoardOne" >#ECDDD6</color>
+    <color name="title">#FFF9E3</color>
+</resources>

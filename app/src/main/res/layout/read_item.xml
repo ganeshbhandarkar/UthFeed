@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/videoPlay"
+    android:layout_width="match_parent"
+    app:cardCornerRadius="12dp"
+    app:cardElevation="5dp"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="450dp"
+        android:background="@drawable/background_read_item"
+        >
+
+
+        <RelativeLayout
+            android:id="@+id/r1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/background_read_item">
+
+
+            <ImageView
+                android:id="@+id/read_item_image"
+                android:layout_width="match_parent"
+                android:layout_height="450dp"
+                android:scaleType="centerCrop"
+                android:fadingEdge="vertical"
+                android:fadingEdgeLength="50dp"
+                />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="450dp"
+                android:src="@drawable/background_read_item"/>
+
+            <TextView
+                android:id="@+id/read_item_title"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_marginTop="350dp"
+                android:text="Title"
+                android:fontFamily="@font/nasal"
+                android:textAlignment="center"
+                android:textColor="@android:color/white"
+                android:textSize="25dp" />
+
+
+            <TextView
+                android:id="@+id/author_item_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/read_item_title"
+                android:layout_alignParentBottom="true"
+                android:text="Author Name"
+                android:fontFamily="@font/nasal"
+                android:textAlignment="center"
+                android:textColor="#2471A3"
+                android:textSize="18dp" />
+
+            <!--<ImageView-->
+                <!--android:id="@+id/thumbnail"-->
+                <!--android:layout_width="80dp"-->
+                <!--android:layout_height="80dp"-->
+                <!--android:layout_centerInParent="true"-->
+                <!--android:visibility="visible"-->
+                <!--android:src="@drawable/ic_slow_motion_video_black_24dp"/>-->
+
+        </RelativeLayout>
+
+
+
+
+
+    </RelativeLayout>
+
+
+</androidx.cardview.widget.CardView>

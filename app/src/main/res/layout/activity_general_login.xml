@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainThreadActivities.GeneralLoginActivity"
+    android:id="@+id/mylayout"
+    android:background="@drawable/bg_anim">
+
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textSize="30sp"
+        android:textAlignment="center"
+        android:text="Welcome"
+        android:layout_marginTop="50dp"
+        android:textColor="#00B336"
+        android:fontFamily="@font/nasal"
+        android:letterSpacing="0.07"
+        />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/title"
+        android:layout_centerHorizontal="true">
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/leaflet"
+            android:layout_marginTop="80dp"
+            android:layout_marginLeft="150dp"/>
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:src="@drawable/line3"/>
+
+
+    </RelativeLayout>
+
+    <!--<TextView-->
+        <!--android:layout_below="@id/logo"-->
+        <!--android:id="@+id/line1"-->
+        <!--android:layout_marginTop="40dp"-->
+        <!--android:layout_centerHorizontal="true"-->
+        <!--android:textSize="25dp"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="It's today's Yo UthFeed."-->
+        <!--android:textColor="#00B336"/>-->
+
+    <!--<TextView-->
+        <!--android:layout_marginTop="5dp"-->
+        <!--android:layout_centerHorizontal="true"-->
+        <!--android:textSize="25dp"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:textColor="#00B336"-->
+        <!--android:layout_below="@id/line1"-->
+        <!--android:text="It's our Tr UthFeed."-->
+        <!--/>-->
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="bottom">
+
+    <Button
+        android:id="@+id/google_signIn_button"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:layout_centerHorizontal="true"
+        android:textColor="@android:color/white"
+        android:text="CONTINUE WITH GOOGLE"
+        android:background="@drawable/google_background"
+        />
+
+    <Button
+        android:id="@+id/facebook_signIn_button"
+        android:layout_below="@id/google_signIn_button"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="CONTINUE WITH FACEBOOK"
+        android:textColor="@android:color/white"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/facebook_background"
+        />
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="20dp"
+        android:layout_below="@id/facebook_signIn_button">
+
+
+
+    <!--<LinearLayout-->
+
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="100dp"-->
+        <!--android:layout_marginEnd="0dp"-->
+        <!--android:layout_marginBottom="0dp"-->
+        <!--android:orientation="horizontal">-->
+
+        <!--<Button-->
+            <!--android:id="@+id/login_button"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_weight="1"-->
+            <!--android:text="Log In"-->
+            <!--android:layout_margin="3dp"-->
+            <!--android:textColor="@android:color/white"-->
+            <!--android:background="@drawable/log_in_background"/>-->
+
+
+        <!--<Button-->
+            <!--android:id="@+id/siqnup_button"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_weight="1"-->
+            <!--android:text="Sign Up"-->
+            <!--android:layout_margin="3dp"-->
+            <!--android:textAlignment="center"-->
+            <!--android:textColor="@android:color/black"-->
+            <!--android:background="@drawable/sign_up_background"/>-->
+
+
+
+
+    <!--</LinearLayout>-->
+
+    </RelativeLayout>
+    </RelativeLayout>
+
+
+
+
+
+</RelativeLayout>

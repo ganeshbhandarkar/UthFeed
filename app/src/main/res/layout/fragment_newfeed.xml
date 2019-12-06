@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:id="@+id/app_bar_media"
+        android:layout_height="50dp"
+        android:background="@android:color/black"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="CHALLENGES"
+                android:layout_centerInParent="true"
+                android:textStyle="bold"
+                android:fontFamily="@font/nasal"
+                android:textSize="20dp"
+                android:textColor="@android:color/holo_green_light"/>
+
+            <ImageView
+                android:id="@+id/profile_dialog"
+                android:layout_margin="10dp"
+                android:layout_alignParentEnd="true"
+                android:background="@drawable/ic_person_outline_black_24dp"
+                android:layout_width="30dp"
+                android:layout_height="30dp" />
+
+
+        </RelativeLayout>
+    </com.google.android.material.appbar.AppBarLayout>
+
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/app_bar_media">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/image_container"
+                >
+
+
+                <technolifestyle.com.imageslider.FlipperLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:id="@+id/image_flipper"
+                    >
+
+                </technolifestyle.com.imageslider.FlipperLayout>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/relative_1"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/image_container">
+
+                <TextView
+                    android:id="@+id/text2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="7dp"
+                    android:padding="1dp"
+                    android:text="\u2022 Competitions"
+                    android:textColor="#2471A3"
+                    android:textSize="25dp"
+                    android:textStyle="bold"
+                    android:layout_centerVertical="true"
+                    android:fontFamily="@font/nasal"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/text2"
+                    android:textSize="10dp"
+                    android:text="Top Trending Competitions"
+                    android:fontFamily="@font/aileron_bold"
+                    android:textColor="@android:color/holo_orange_dark"
+                    android:layout_marginLeft="25dp"/>
+
+                <Button
+                    android:layout_width="80dp"
+                    android:layout_height="40dp"
+                    android:layout_alignParentEnd="true"
+                    android:text="MORE"
+                    android:layout_centerVertical="true"
+                    android:textColor="@android:color/white"
+                    android:fontFamily="@font/nasal"
+                    android:textStyle="bold"
+                    android:layout_marginRight="5dp"
+                    android:id="@+id/more_competitions"
+                    android:textAlignment="center"
+                    android:background="@drawable/button_more"/>
+
+            </RelativeLayout>
+
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerView1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/relative_1"
+                android:layout_marginTop="7dp"
+                android:orientation="horizontal"></androidx.recyclerview.widget.RecyclerView>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/relative_2"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/recyclerView1">
+                <TextView
+                    android:id="@+id/text3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="7dp"
+                    android:fontFamily="@font/nasal"
+                    android:text="\u2022 Winners"
+                    android:padding="1dp"
+                    android:textColor="#2471A3"
+                    android:layout_centerVertical="true"
+                    android:textSize="25dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/text3"
+                    android:text="Top Winners"
+                    android:textSize="10dp"
+                    android:fontFamily="@font/aileron_bold"
+                    android:textColor="@android:color/holo_orange_dark"
+                    android:layout_marginLeft="25dp"/>
+
+                <Button
+                    android:layout_width="80dp"
+                    android:layout_height="40dp"
+                    android:layout_alignParentEnd="true"
+                    android:text="MORE"
+                    android:textColor="@android:color/white"
+                    android:fontFamily="@font/nasal"
+                    android:id="@+id/more_winners"
+                    android:textStyle="bold"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="5dp"
+                    android:textAlignment="center"
+                    android:background="@drawable/button_more"/>
+
+            </RelativeLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerView2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/relative_2"
+                android:layout_marginTop="7dp"
+                android:orientation="horizontal"></androidx.recyclerview.widget.RecyclerView>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_below="@id/recyclerView2"/>
+
+
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+
+
+</ScrollView>
