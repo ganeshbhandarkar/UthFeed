@@ -7,6 +7,8 @@ public class CommentModel {
     String comment,uid,uimg,uname;
     Object timeStamp;
 
+    // This is git demo
+
 //    public CommentModel(String comment, String uid, String uimg, String uname, Object timeStamp) {
 //        this.comment = comment;
 //        this.uid = uid;
